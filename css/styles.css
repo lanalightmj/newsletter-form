@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: #bac5db;
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+
+main {
+	padding-top: 104px;
+}
+
+.form-wrapper {
+	position: relative;
+	display: block;
+	width: 666px;
+	background-color: #353a45;
+	padding-bottom: 65px;
+	margin: 0 auto;
+	padding-top: 83px;
+	border-radius: 25px;
+}
+
+.letter_icon {
+	position: absolute;
+	width: 94px;
+	height: auto;
+	left: 50%;
+	top: -47px;
+	margin-left: -47px;
+}
+
+.close_icon {
+	position: absolute;
+	top: 11px;
+	right: 11px;
+	cursor: pointer;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #538fff;
+	font-size: 2.5em;
+	line-height: 1;
+}
+
+p:first-of-type {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33.6px;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+form {
+	margin-bottom: 30px;
+}
+
+input {
+	height: 52px;
+	border-radius: 10px;
+	border-style: none;
+
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: #a9a9a9;
+    font-size: 20px;
+    line-height: 52px;
+    vertical-align: middle;
+} 
+
+input[type="email"]::-moz-placeholder {
+    color: #a9a9a9;
+    font-size: 20px;
+    line-height: 52px;
+    vertical-align: middle;
+} 
+
+input[type="email"] {
+	width: 55.9%;
+	margin-right: 13px;
+	padding-left: 18px;
+	line-height: 52px;
+}
+
+input[type="button"] {
+	width: 24.8%;
+	background-color: #538fff;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	opacity: 0.7;
+	border: 5px double #fff;
+}
+
+.btn:active {
+	opacity: 0.7;
+	border: 5px double #538fff;
+	background-color: #fff;
+	color: #538fff;
+}
+
+p:last-of-type {
+	font-size: 20px;
+	font-style: italic;
+	color: #787d87;
+}
+
+
+@media screen and (max-width: 480px) {
+	main{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.form-wrapper {
+		width: 93%;
+		padding: 20px 10px 65px;
+
+	}
+	.letter_icon {
+		position: relative;
+		display: block;
+		width: 20%;
+		margin-left: -10%;
+		margin-bottom: 16px;
+		top: 0;
+	}
+	h1 {
+		font-size: 1.5em;
+		margin-bottom: 16px;
+	}
+	p:first-of-type {
+		font-size: 0.8em;
+	}
+	
+	input[type="email"],
+	input[type="button"] {
+		display: block;
+		width: 95% !important;
+		margin: 0 auto 24px;
+	}
+
+}
+
+.invisible {
+	display: none;
+}
